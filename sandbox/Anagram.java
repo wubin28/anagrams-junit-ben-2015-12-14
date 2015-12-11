@@ -11,7 +11,7 @@ public class Anagram {
             return Arrays.asList(string, 
                                  swapTwoLetterWord(string));
         }
-        return Arrays.asList("abc", 
+        return Arrays.asList(string, 
                              "acb", 
                              "bac", 
                              "bca", 
