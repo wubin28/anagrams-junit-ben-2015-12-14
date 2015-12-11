@@ -13,8 +13,7 @@ public class AnagramTest {
         List<String> result = anagram.generate("a");
 
         // Then
-        assertTrue(result.contains("a"));
-        assertEquals(1, result.size());
+        assertThat(result, is(Arrays.asList("a")));
     }
 
     @Test
