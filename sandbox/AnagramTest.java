@@ -29,16 +29,7 @@ public class AnagramTest {
         // Given
         Anagram anagram = new Anagram();
 
-        // When
-        List<String> result = anagram.generate("abc");
-
-        //Then
-        assertTrue(result.contains("abc"));
-        assertTrue(result.contains("acb"));
-        assertTrue(result.contains("bac"));
-        assertTrue(result.contains("bca"));
-        assertTrue(result.contains("cab"));
-        assertTrue(result.contains("cba"));
-        assertEquals(6, result.size());
+        // When & Then
+        assertThat(anagram.generate("abc"), is(Arrays.asList("abc", "acb", "bac", "bca", "cab", "cba")));
     }
 }
