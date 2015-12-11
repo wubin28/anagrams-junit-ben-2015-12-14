@@ -19,7 +19,7 @@ public class Anagram {
                              "cba");
     }
 
-    private String swapTwoLetterWord(string) {
+    private String swapTwoLetterWord(String string) {
         return string.substring(1) + string.substring(0, 1);
     }
 }
