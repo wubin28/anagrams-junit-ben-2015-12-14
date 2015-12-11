@@ -2,8 +2,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Arrays;
 
-public class Anagram {
-    public List<String> generate(String string) {
+public class Anagrams {
+    public static List<String> of(String string) {
         if (string.length() == 1) {
             return Arrays.asList(string);
         }
