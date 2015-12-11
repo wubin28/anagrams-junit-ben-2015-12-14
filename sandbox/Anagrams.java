@@ -11,11 +11,11 @@ public class Anagrams {
             return Arrays.asList(string, 
                                  string.substring(1) + string.substring(0, 1));
         }
-        return Arrays.asList(string.substring(0, 1) + "bc", 
-                             string.substring(0, 1) + "cb", 
-                             string.substring(1, 2) + "ac", 
-                             string.substring(1, 2) + "ca", 
-                             string.substring(2) + "ab", 
-                             string.substring(2) + "ba");
+        return Arrays.asList(string.substring(0, 1) + Anagrams.of("bc").get(0), 
+                             string.substring(0, 1) + Anagrams.of("bc").get(1), 
+                             string.substring(1, 2) + Anagrams.of("ac").get(0), 
+                             string.substring(1, 2) + Anagrams.of("ac").get(1), 
+                             string.substring(2) + Anagrams.of("ab").get(0), 
+                             string.substring(2) + Anagrams.of("ab").get(1));
     }
 }
