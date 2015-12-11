@@ -9,8 +9,11 @@ public class AnagramTest {
         // Given
         Anagram anagram = new Anagram();
 
-        // When & Then
-        assertTrue(anagram.generate("a").contains("a"));
+        // When
+        List<String> result = anagram.generate("a");
+
+        // Then
+        assertTrue(result.contains("a"));
     }
 
     @Test
