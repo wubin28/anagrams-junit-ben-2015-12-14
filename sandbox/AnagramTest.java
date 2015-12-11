@@ -14,6 +14,7 @@ public class AnagramTest {
 
         // Then
         assertTrue(result.contains("a"));
+        assertEquals(1, result.size());
     }
 
     @Test
@@ -27,6 +28,7 @@ public class AnagramTest {
         //Then
         assertTrue(result.contains("ab"));
         assertTrue(result.contains("ba"));
+        assertEquals(2, result.size());
     }
 
     @Test
@@ -44,5 +46,6 @@ public class AnagramTest {
         assertTrue(result.contains("bca"));
         assertTrue(result.contains("cab"));
         assertTrue(result.contains("cba"));
+        assertEquals(3, result.size());
     }
 }
