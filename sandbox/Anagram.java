@@ -20,6 +20,6 @@ public class Anagram {
     }
 
     private String swapTwoLetterWord(String string) {
-        return string.substring(1) + string.substring(0, 1);
+        return string.substring(1, 1) + string.substring(0, 1);
     }
 }
