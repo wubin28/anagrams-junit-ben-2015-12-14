@@ -46,6 +46,6 @@ public class AnagramTest {
         assertTrue(result.contains("bca"));
         assertTrue(result.contains("cab"));
         assertTrue(result.contains("cba"));
-        assertEquals(3, result.size());
+        assertEquals(6, result.size());
     }
 }
