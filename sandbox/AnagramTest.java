@@ -11,11 +11,8 @@ public class AnagramTest {
         // Given
         Anagram anagram = new Anagram();
 
-        // When
-        List<String> result = anagram.generate("a");
-
-        // Then
-        assertThat(result, is(Arrays.asList("a")));
+        // When & Then
+        assertThat(anagram.generate("a"), is(Arrays.asList("a")));
     }
 
     @Test
@@ -23,13 +20,8 @@ public class AnagramTest {
         // Given
         Anagram anagram = new Anagram();
 
-        // When
-        List<String> result = anagram.generate("ab");
-
-        //Then
-        assertTrue(result.contains("ab"));
-        assertTrue(result.contains("ba"));
-        assertEquals(2, result.size());
+        // When & Then
+        assertThat(anagram.generate("ab"), is(Arrays.asList("ab", "ba")));
     }
 
     @Test
