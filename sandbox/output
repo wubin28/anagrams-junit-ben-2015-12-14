@@ -1,6 +1,6 @@
-AnagramTest.java:16: error: cannot find symbol
+AnagramTest.java:17: error: cannot find symbol
         assertThat(result, is(Arrays.asList("a")));
-                              ^
-  symbol:   variable Arrays
+                           ^
+  symbol:   method is(List<String>)
   location: class AnagramTest
 1 error
