@@ -9,7 +9,7 @@ public class Anagram {
         }
         if (string.length() == 2) {
             return Arrays.asList(string, 
-                                 swapTwoLetterWord(string));
+                                 string.substring(1) + string.substring(0, 1));
         }
         return Arrays.asList(string, 
                              "acb", 
@@ -17,9 +17,5 @@ public class Anagram {
                              "bca", 
                              "cab", 
                              "cba");
-    }
-
-    private String swapTwoLetterWord(String string) {
-        return string.substring(1) + string.substring(0, 1);
     }
 }
