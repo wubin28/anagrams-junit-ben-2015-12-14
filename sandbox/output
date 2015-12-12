@@ -1,4 +1,7 @@
-Anagrams.java:23: error: <identifier> expected
-    private String dropCharacter(String s, index) {
-                                                ^
-1 error
+Anagrams.java:14: error: non-static method dropCharacter(String,int) cannot be referenced from a static context
+        return Arrays.asList(s.substring(0, 1) + Anagrams.of(dropCharacter(s, 0)).get(0), 
+                                                             ^
+Anagrams.java:15: error: non-static method dropCharacter(String,int) cannot be referenced from a static context
+                             s.substring(0, 1) + Anagrams.of(dropCharacter(s, 0)).get(1), 
+                                                             ^
+2 errors
