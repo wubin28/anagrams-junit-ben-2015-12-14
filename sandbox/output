@@ -1,4 +1,11 @@
-Anagrams.java:19: error: ')' expected
-                             s.substring(2) + Anagrams.of("ab").get(1));
-                                                                       ^
-1 error
+Anagrams.java:14: error: cannot find symbol
+        return Arrays.asList(s.substring(0, 1) + Anagrams.of(dropCharacter(s, 0)).get(0), 
+                                                             ^
+  symbol:   method dropCharacter(String,int)
+  location: class Anagrams
+Anagrams.java:15: error: cannot find symbol
+                             s.substring(0, 1) + Anagrams.of(dropCharacter(s, 0)).get(1), 
+                                                             ^
+  symbol:   method dropCharacter(String,int)
+  location: class Anagrams
+2 errors
