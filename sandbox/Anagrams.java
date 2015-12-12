@@ -25,7 +25,7 @@ public class Anagrams {
             return s.substring(1);
         }
         if (index == 1) {
-            return "ac";
+            return "a" + "c";
         }
         return s.substring(0,2);
     }
