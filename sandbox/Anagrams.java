@@ -20,7 +20,7 @@ public class Anagrams {
                              );
     }
 
-    private String dropCharacter(String s, int index) {
+    private static String dropCharacter(String s, int index) {
         return "bc";
     }
 }
