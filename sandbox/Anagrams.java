@@ -24,6 +24,9 @@ public class Anagrams {
         if (index == 0) {
             return "bc";
         }
-        return "ac";
+        if (index == 1) {
+            return "ac";
+        }
+        return "ab";
     }
 }
