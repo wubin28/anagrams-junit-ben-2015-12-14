@@ -1,6 +1,4 @@
-JUnit version 4.11-SNAPSHOT-20120416-1530
-...
-Time: 0.038
-
-OK (3 tests)
-
+Anagrams.java:19: error: ')' expected
+                             s.substring(2) + Anagrams.of("ab").get(1));
+                                                                       ^
+1 error
