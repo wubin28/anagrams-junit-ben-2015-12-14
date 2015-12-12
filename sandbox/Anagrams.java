@@ -22,11 +22,11 @@ public class Anagrams {
 
     private static String dropCharacter(String s, int index) {
         if (index == 0) {
-            return "bc";
+            return s.substring(1);
         }
         if (index == 1) {
             return "ac";
         }
-        return "ab";
+        return s.substring(0,2);
     }
 }
