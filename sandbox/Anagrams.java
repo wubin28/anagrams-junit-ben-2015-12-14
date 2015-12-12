@@ -19,4 +19,8 @@ public class Anagrams {
                              s.substring(2) + Anagrams.of("ab").get(1)
                              );
     }
+
+    private String dropCharacter(String s, index) {
+        return "bc";
+    }
 }
