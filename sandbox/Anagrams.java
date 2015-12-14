@@ -28,7 +28,7 @@ public class Anagrams {
 
     private static String dropCharacter(String s, int index) {
         String before = s.substring(0, index);
-        String after = s.substring(index + 1);
+        String after = s.substring(index + 1, s.length());
         return before + after;
     }
 }
