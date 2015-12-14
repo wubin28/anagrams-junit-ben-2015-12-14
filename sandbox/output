@@ -1,6 +1,4 @@
-JUnit version 4.11-SNAPSHOT-20120416-1530
-...
-Time: 0.03
-
-OK (3 tests)
-
+AnagramTest.java:26: error: ';' expected
+        assertThat(Anagrams.of("abcd").size(), is(24)));
+                                                      ^
+1 error
