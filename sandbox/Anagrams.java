@@ -13,10 +13,13 @@ public class Anagrams {
         }
         List<String> anagrams = new ArrayList<String>();
 
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 2; i++) {
             anagrams.add(s.substring(i, 1) + Anagrams.of(dropCharacter(s, i)).get(0));
             anagrams.add(s.substring(i, 1) + Anagrams.of(dropCharacter(s, i)).get(1));
         }
+
+        anagrams.add(s.substring(2) + Anagrams.of(dropCharacter(s, 2)).get(0));
+        anagrams.add(s.substring(2) + Anagrams.of(dropCharacter(s, 2)).get(1));
 
         return anagrams;
     }

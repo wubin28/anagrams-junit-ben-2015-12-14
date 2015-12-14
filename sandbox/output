@@ -1,11 +1,14 @@
 JUnit version 4.11-SNAPSHOT-20120416-1530
-...E
-Time: 0.036
+.E..
+Time: 0.034
 There was 1 failure:
 1) the_anagram_of_a_three_letter_word_should_be_six_words(AnagramTest)
-java.lang.StringIndexOutOfBoundsException: String index out of range: -1
-	at java.lang.String.substring(String.java:1954)
-	at Anagrams.of(Anagrams.java:17)
+java.lang.AssertionError: 
+Expected: is <[abc, acb, bac, bca, cab, cba]>
+     but: was <[abc, acb, ac, ca, cab, cba]>
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.junit.Assert.assertThat(Assert.java:780)
+	at org.junit.Assert.assertThat(Assert.java:742)
 	at AnagramTest.the_anagram_of_a_three_letter_word_should_be_six_words(AnagramTest.java:21)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
