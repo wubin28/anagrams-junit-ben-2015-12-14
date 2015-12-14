@@ -15,12 +15,10 @@ public class Anagrams {
 
         List<String> anagrams = new ArrayList<String>();
 
-        anagrams.add(s.substring(0, 0 + 1) + Anagrams.of(dropCharacter(s, 0)).get(0));
-        anagrams.add(s.substring(0, 0 + 1) + Anagrams.of(dropCharacter(s, 0)).get(1));
-        anagrams.add(s.substring(1, 1 + 1) + Anagrams.of(dropCharacter(s, 1)).get(0));
-        anagrams.add(s.substring(1, 1 + 1) + Anagrams.of(dropCharacter(s, 1)).get(1));
-        anagrams.add(s.substring(2, 2 + 1) + Anagrams.of(dropCharacter(s, 2)).get(0));
-        anagrams.add(s.substring(2, 2 + 1) + Anagrams.of(dropCharacter(s, 2)).get(1));
+        for (int i = 0; i < 3; i++) {
+            anagrams.add(s.substring(i, i + 1) + Anagrams.of(dropCharacter(s, i)).get(0));
+            anagrams.add(s.substring(i, i + 1) + Anagrams.of(dropCharacter(s, i)).get(1));
+        }
 
         return anagrams;
     }
