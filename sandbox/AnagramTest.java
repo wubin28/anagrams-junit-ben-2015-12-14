@@ -23,6 +23,6 @@ public class AnagramTest {
 
     @Test
     public void the_anagrams_of_a_four_letter_word_should_be_twenty_four_words() {
-        assertThat(Anagrams.of("abcd").size(), is(24)));
+        assertThat(Anagrams.of("abcd").size(), is(24));
     }
 }
