@@ -11,9 +11,10 @@ public class Anagrams {
         List<String> anagrams = new ArrayList<String>();
 
         for (int i = 0; i < s.length(); i++) {
+            String droppedCharacter = s.substring(i, i + 1);
             List<String> anagramsOfRest = Anagrams.of(dropCharacter(s, i));
             for (String anagramOfRest : anagramsOfRest) {
-                anagrams.add(s.substring(i, i + 1) + anagramOfRest);
+                anagrams.add(droppedCharacter + anagramOfRest);
             }
         }
 
