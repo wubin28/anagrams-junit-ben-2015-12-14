@@ -12,8 +12,8 @@ public class Anagrams {
 
         for (int i = 0; i < s.length(); i++) {
             List<String> anagramsOfRest = Anagrams.of(dropCharacter(s, i));
-            for (int j = 0; j < anagramsOfRest.size(); j++) {
-                anagrams.add(s.substring(i, i + 1) + anagramsOfRest.get(j));
+            for (String anagramOfRest : anagramsOfRest) {
+                anagrams.add(s.substring(i, i + 1) + anagramOfRest);
             }
         }
 
